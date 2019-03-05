@@ -1,10 +1,10 @@
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('jszip')) :
-  typeof define === 'function' && define.amd ? define(['jszip'], factory) :
+  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('JSZip')) :
+  typeof define === 'function' && define.amd ? define(['JSZip'], factory) :
   (global = global || self, global.xlsx = factory(global.JSZip));
-}(this, function (Zip) { 'use strict';
+}(this, function (JSZip) { 'use strict';
 
-  Zip = Zip && Zip.hasOwnProperty('default') ? Zip['default'] : Zip;
+  JSZip = JSZip && JSZip.hasOwnProperty('default') ? JSZip['default'] : JSZip;
 
   function _defineProperty(obj, key, value) {
     if (key in obj) {
@@ -533,7 +533,7 @@
           xmlns: xmlns
         }, children));
 
-        _initialize(assertThisInitialized(assertThisInitialized(_this)));
+        _initialize(assertThisInitialized(_this));
 
         _this[HEAD] = '<?xml version="1.0" encoding="UTF-8"?>';
         return _this;
@@ -794,7 +794,7 @@
 
         _this2 = possibleConstructorReturn(this, (_getPrototypeOf2 = getPrototypeOf(XnumFmts)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
-        _initialize2(assertThisInitialized(assertThisInitialized(_this2)));
+        _initialize2(assertThisInitialized(_this2));
 
         return _this2;
       }
@@ -839,7 +839,7 @@
 
         _this3 = possibleConstructorReturn(this, (_getPrototypeOf3 = getPrototypeOf(XnumFmt)).call.apply(_getPrototypeOf3, [this].concat(args)));
 
-        _initialize3(assertThisInitialized(assertThisInitialized(_this3)));
+        _initialize3(assertThisInitialized(_this3));
 
         return _this3;
       }
@@ -877,7 +877,7 @@
 
         _this4 = possibleConstructorReturn(this, (_getPrototypeOf4 = getPrototypeOf(Xfonts)).call.apply(_getPrototypeOf4, [this].concat(args)));
 
-        _initialize4(assertThisInitialized(assertThisInitialized(_this4)));
+        _initialize4(assertThisInitialized(_this4));
 
         return _this4;
       }
@@ -922,7 +922,7 @@
 
         _this5 = possibleConstructorReturn(this, (_getPrototypeOf5 = getPrototypeOf(Xfont)).call.apply(_getPrototypeOf5, [this].concat(args)));
 
-        _initialize5(assertThisInitialized(assertThisInitialized(_this5)));
+        _initialize5(assertThisInitialized(_this5));
 
         return _this5;
       }
@@ -981,7 +981,7 @@
 
         _this6 = possibleConstructorReturn(this, (_getPrototypeOf6 = getPrototypeOf(Xfills)).call.apply(_getPrototypeOf6, [this].concat(args)));
 
-        _initialize6(assertThisInitialized(assertThisInitialized(_this6)));
+        _initialize6(assertThisInitialized(_this6));
 
         return _this6;
       }
@@ -1026,7 +1026,7 @@
 
         _this7 = possibleConstructorReturn(this, (_getPrototypeOf7 = getPrototypeOf(Xfill)).call.apply(_getPrototypeOf7, [this].concat(args)));
 
-        _initialize7(assertThisInitialized(assertThisInitialized(_this7)));
+        _initialize7(assertThisInitialized(_this7));
 
         return _this7;
       }
@@ -1083,7 +1083,7 @@
 
         _this8 = possibleConstructorReturn(this, (_getPrototypeOf8 = getPrototypeOf(XpatternFill)).call.apply(_getPrototypeOf8, [this].concat(args)));
 
-        _initialize8(assertThisInitialized(assertThisInitialized(_this8)));
+        _initialize8(assertThisInitialized(_this8));
 
         return _this8;
       }
@@ -1130,7 +1130,7 @@
 
         _this9 = possibleConstructorReturn(this, (_getPrototypeOf9 = getPrototypeOf(Xborders)).call.apply(_getPrototypeOf9, [this].concat(args)));
 
-        _initialize9(assertThisInitialized(assertThisInitialized(_this9)));
+        _initialize9(assertThisInitialized(_this9));
 
         return _this9;
       }
@@ -1175,7 +1175,7 @@
 
         _this10 = possibleConstructorReturn(this, (_getPrototypeOf10 = getPrototypeOf(Xborder)).call.apply(_getPrototypeOf10, [this].concat(args)));
 
-        _initialize10(assertThisInitialized(assertThisInitialized(_this10)));
+        _initialize10(assertThisInitialized(_this10));
 
         return _this10;
       }
@@ -1248,7 +1248,7 @@
 
         _this11 = possibleConstructorReturn(this, (_getPrototypeOf11 = getPrototypeOf(XcellStyles)).call.apply(_getPrototypeOf11, [this].concat(args)));
 
-        _initialize11(assertThisInitialized(assertThisInitialized(_this11)));
+        _initialize11(assertThisInitialized(_this11));
 
         return _this11;
       }
@@ -1293,7 +1293,7 @@
 
         _this12 = possibleConstructorReturn(this, (_getPrototypeOf12 = getPrototypeOf(XcellStyle)).call.apply(_getPrototypeOf12, [this].concat(args)));
 
-        _initialize12(assertThisInitialized(assertThisInitialized(_this12)));
+        _initialize12(assertThisInitialized(_this12));
 
         return _this12;
       }
@@ -1331,7 +1331,7 @@
 
         _this13 = possibleConstructorReturn(this, (_getPrototypeOf13 = getPrototypeOf(XcellStyleXfs)).call.apply(_getPrototypeOf13, [this].concat(args)));
 
-        _initialize13(assertThisInitialized(assertThisInitialized(_this13)));
+        _initialize13(assertThisInitialized(_this13));
 
         return _this13;
       }
@@ -1376,7 +1376,7 @@
 
         _this14 = possibleConstructorReturn(this, (_getPrototypeOf14 = getPrototypeOf(XcellXfs)).call.apply(_getPrototypeOf14, [this].concat(args)));
 
-        _initialize14(assertThisInitialized(assertThisInitialized(_this14)));
+        _initialize14(assertThisInitialized(_this14));
 
         return _this14;
       }
@@ -1427,7 +1427,7 @@
         };
         _this15 = possibleConstructorReturn(this, getPrototypeOf(Xxf).call(this, objectSpread({}, defaults, attrs), children));
 
-        _initialize15(assertThisInitialized(assertThisInitialized(_this15)));
+        _initialize15(assertThisInitialized(_this15));
 
         _this15.alignment = new Xalignment();
         return _this15;
@@ -1486,7 +1486,7 @@
         };
         _this16 = possibleConstructorReturn(this, getPrototypeOf(Xalignment).call(this, objectSpread({}, defaults, attrs), children));
 
-        _initialize16(assertThisInitialized(assertThisInitialized(_this16)));
+        _initialize16(assertThisInitialized(_this16));
 
         return _this16;
       }
@@ -2405,7 +2405,7 @@
         attrs['xmlns:r'] = attrs['xmlns:r'] || 'http://schemas.openxmlformats.org/officeDocument/2006/relationships';
         _this = possibleConstructorReturn(this, getPrototypeOf(Xworksheet).call(this, attrs, children));
 
-        _initialize(assertThisInitialized(assertThisInitialized(_this)));
+        _initialize(assertThisInitialized(_this));
 
         _this[HEAD] = '<?xml version="1.0" encoding="UTF-8"?>';
         return _this;
@@ -2528,7 +2528,7 @@
 
         _this2 = possibleConstructorReturn(this, (_getPrototypeOf2 = getPrototypeOf(XsheetPr)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
-        _initialize2(assertThisInitialized(assertThisInitialized(_this2)));
+        _initialize2(assertThisInitialized(_this2));
 
         return _this2;
       }
@@ -2566,7 +2566,7 @@
 
         _this3 = possibleConstructorReturn(this, (_getPrototypeOf3 = getPrototypeOf(XpageSetUpPr)).call.apply(_getPrototypeOf3, [this].concat(args)));
 
-        _initialize3(assertThisInitialized(assertThisInitialized(_this3)));
+        _initialize3(assertThisInitialized(_this3));
 
         return _this3;
       }
@@ -2604,7 +2604,7 @@
 
         _this4 = possibleConstructorReturn(this, (_getPrototypeOf4 = getPrototypeOf(Xdimension)).call.apply(_getPrototypeOf4, [this].concat(args)));
 
-        _initialize4(assertThisInitialized(assertThisInitialized(_this4)));
+        _initialize4(assertThisInitialized(_this4));
 
         return _this4;
       }
@@ -2641,7 +2641,7 @@
 
       _this5 = possibleConstructorReturn(this, (_getPrototypeOf5 = getPrototypeOf(XsheetViews)).call.apply(_getPrototypeOf5, [this].concat(args)));
 
-      defineProperty(assertThisInitialized(assertThisInitialized(_this5)), "__name", "sheetViews");
+      defineProperty(assertThisInitialized(_this5), "__name", "sheetViews");
 
       return _this5;
     }
@@ -2667,7 +2667,7 @@
 
         _this6 = possibleConstructorReturn(this, (_getPrototypeOf6 = getPrototypeOf(XsheetView)).call.apply(_getPrototypeOf6, [this].concat(args)));
 
-        _initialize5(assertThisInitialized(assertThisInitialized(_this6)));
+        _initialize5(assertThisInitialized(_this6));
 
         return _this6;
       }
@@ -2705,7 +2705,7 @@
 
         _this7 = possibleConstructorReturn(this, (_getPrototypeOf7 = getPrototypeOf(Xselection)).call.apply(_getPrototypeOf7, [this].concat(args)));
 
-        _initialize6(assertThisInitialized(assertThisInitialized(_this7)));
+        _initialize6(assertThisInitialized(_this7));
 
         return _this7;
       }
@@ -2743,7 +2743,7 @@
 
         _this8 = possibleConstructorReturn(this, (_getPrototypeOf8 = getPrototypeOf(Xpane)).call.apply(_getPrototypeOf8, [this].concat(args)));
 
-        _initialize7(assertThisInitialized(assertThisInitialized(_this8)));
+        _initialize7(assertThisInitialized(_this8));
 
         return _this8;
       }
@@ -2781,7 +2781,7 @@
 
         _this9 = possibleConstructorReturn(this, (_getPrototypeOf9 = getPrototypeOf(XsheetFormatPr)).call.apply(_getPrototypeOf9, [this].concat(args)));
 
-        _initialize8(assertThisInitialized(assertThisInitialized(_this9)));
+        _initialize8(assertThisInitialized(_this9));
 
         return _this9;
       }
@@ -2818,7 +2818,7 @@
 
       _this10 = possibleConstructorReturn(this, (_getPrototypeOf10 = getPrototypeOf(Xcols)).call.apply(_getPrototypeOf10, [this].concat(args)));
 
-      defineProperty(assertThisInitialized(assertThisInitialized(_this10)), "__name", "cols");
+      defineProperty(assertThisInitialized(_this10), "__name", "cols");
 
       return _this10;
     }
@@ -2844,7 +2844,7 @@
 
         _this11 = possibleConstructorReturn(this, (_getPrototypeOf11 = getPrototypeOf(Xcol)).call.apply(_getPrototypeOf11, [this].concat(args)));
 
-        _initialize9(assertThisInitialized(assertThisInitialized(_this11)));
+        _initialize9(assertThisInitialized(_this11));
 
         return _this11;
       }
@@ -2881,7 +2881,7 @@
 
       _this12 = possibleConstructorReturn(this, (_getPrototypeOf12 = getPrototypeOf(XsheetData)).call.apply(_getPrototypeOf12, [this].concat(args)));
 
-      defineProperty(assertThisInitialized(assertThisInitialized(_this12)), "__name", "sheetData");
+      defineProperty(assertThisInitialized(_this12), "__name", "sheetData");
 
       return _this12;
     }
@@ -2907,7 +2907,7 @@
 
         _this13 = possibleConstructorReturn(this, (_getPrototypeOf13 = getPrototypeOf(Xrow)).call.apply(_getPrototypeOf13, [this].concat(args)));
 
-        _initialize10(assertThisInitialized(assertThisInitialized(_this13)));
+        _initialize10(assertThisInitialized(_this13));
 
         return _this13;
       }
@@ -2939,7 +2939,7 @@
 
         _this14 = possibleConstructorReturn(this, getPrototypeOf(Xc).call(this, attrs, children));
 
-        _initialize11(assertThisInitialized(assertThisInitialized(_this14)));
+        _initialize11(assertThisInitialized(_this14));
 
         _this14.f = null;
         _this14.v = null;
@@ -2987,7 +2987,7 @@
 
         _this15 = possibleConstructorReturn(this, (_getPrototypeOf14 = getPrototypeOf(Xf)).call.apply(_getPrototypeOf14, [this].concat(args)));
 
-        _initialize12(assertThisInitialized(assertThisInitialized(_this15)));
+        _initialize12(assertThisInitialized(_this15));
 
         return _this15;
       }
@@ -3025,7 +3025,7 @@
 
         _this16 = possibleConstructorReturn(this, (_getPrototypeOf15 = getPrototypeOf(XmergeCells)).call.apply(_getPrototypeOf15, [this].concat(args)));
 
-        _initialize13(assertThisInitialized(assertThisInitialized(_this16)));
+        _initialize13(assertThisInitialized(_this16));
 
         return _this16;
       }
@@ -3063,7 +3063,7 @@
 
         _this17 = possibleConstructorReturn(this, (_getPrototypeOf16 = getPrototypeOf(XmergeCell)).call.apply(_getPrototypeOf16, [this].concat(args)));
 
-        _initialize14(assertThisInitialized(assertThisInitialized(_this17)));
+        _initialize14(assertThisInitialized(_this17));
 
         return _this17;
       }
@@ -3101,7 +3101,7 @@
 
         _this18 = possibleConstructorReturn(this, (_getPrototypeOf17 = getPrototypeOf(XprintOptions)).call.apply(_getPrototypeOf17, [this].concat(args)));
 
-        _initialize15(assertThisInitialized(assertThisInitialized(_this18)));
+        _initialize15(assertThisInitialized(_this18));
 
         return _this18;
       }
@@ -3139,7 +3139,7 @@
 
         _this19 = possibleConstructorReturn(this, (_getPrototypeOf18 = getPrototypeOf(XpageMargins)).call.apply(_getPrototypeOf18, [this].concat(args)));
 
-        _initialize16(assertThisInitialized(assertThisInitialized(_this19)));
+        _initialize16(assertThisInitialized(_this19));
 
         return _this19;
       }
@@ -3177,7 +3177,7 @@
 
         _this20 = possibleConstructorReturn(this, (_getPrototypeOf19 = getPrototypeOf(XpageSetup)).call.apply(_getPrototypeOf19, [this].concat(args)));
 
-        _initialize17(assertThisInitialized(assertThisInitialized(_this20)));
+        _initialize17(assertThisInitialized(_this20));
 
         return _this20;
       }
@@ -3209,7 +3209,7 @@
 
         _this21 = possibleConstructorReturn(this, getPrototypeOf(XheaderFooter).call(this, attrs, children));
 
-        _initialize18(assertThisInitialized(assertThisInitialized(_this21)));
+        _initialize18(assertThisInitialized(_this21));
 
         _this21.oddHeader = null;
         _this21.oddFooter = null;
@@ -3778,7 +3778,7 @@
           xmlns: xmlns
         }, children));
 
-        _initialize(assertThisInitialized(assertThisInitialized(_this)));
+        _initialize(assertThisInitialized(_this));
 
         _this[HEAD] = '<?xml version="1.0" encoding="UTF-8"?>';
         return _this;
@@ -3816,7 +3816,7 @@
 
       _this2 = possibleConstructorReturn(this, (_getPrototypeOf2 = getPrototypeOf(Xsi)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
-      defineProperty(assertThisInitialized(assertThisInitialized(_this2)), "__name", "si");
+      defineProperty(assertThisInitialized(_this2), "__name", "si");
 
       return _this2;
     }
@@ -3842,7 +3842,7 @@
 
         _this3 = possibleConstructorReturn(this, (_getPrototypeOf3 = getPrototypeOf(Xt)).call.apply(_getPrototypeOf3, [this].concat(args)));
 
-        _initialize2(assertThisInitialized(assertThisInitialized(_this3)));
+        _initialize2(assertThisInitialized(_this3));
 
         return _this3;
       }
@@ -3861,31 +3861,6 @@
       }]
     };
   }, Node);
-  var Xr =
-  /*#__PURE__*/
-  function (_Node6) {
-    inherits(Xr, _Node6);
-
-    function Xr() {
-      var _getPrototypeOf4;
-
-      var _this4;
-
-      classCallCheck(this, Xr);
-
-      for (var _len3 = arguments.length, args = new Array(_len3), _key3 = 0; _key3 < _len3; _key3++) {
-        args[_key3] = arguments[_key3];
-      }
-
-      _this4 = possibleConstructorReturn(this, (_getPrototypeOf4 = getPrototypeOf(Xr)).call.apply(_getPrototypeOf4, [this].concat(args)));
-
-      defineProperty(assertThisInitialized(assertThisInitialized(_this4)), "__name", "r");
-
-      return _this4;
-    }
-
-    return Xr;
-  }(Node);
 
   var RefTable =
   /*#__PURE__*/
@@ -3996,7 +3971,7 @@
           xmlns: xmlns
         }, children));
 
-        _initialize(assertThisInitialized(assertThisInitialized(_this)));
+        _initialize(assertThisInitialized(_this));
 
         _this[HEAD] = '<?xml version="1.0" encoding="UTF-8"?>';
         return _this;
@@ -4035,7 +4010,7 @@
 
         _this2 = possibleConstructorReturn(this, (_getPrototypeOf2 = getPrototypeOf(XRelationship)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
-        _initialize2(assertThisInitialized(assertThisInitialized(_this2)));
+        _initialize2(assertThisInitialized(_this2));
 
         return _this2;
       }
@@ -4072,7 +4047,7 @@
         attrs['xmlns:r'] = attrs['xmlns:r'] || 'http://schemas.openxmlformats.org/officeDocument/2006/relationships';
         _this3 = possibleConstructorReturn(this, getPrototypeOf(Xworkbook).call(this, attrs, children));
 
-        _initialize3(assertThisInitialized(assertThisInitialized(_this3)));
+        _initialize3(assertThisInitialized(_this3));
 
         _this3[HEAD] = '<?xml version="1.0" encoding="UTF-8"?>';
         return _this3;
@@ -4153,7 +4128,7 @@
 
         _this4 = possibleConstructorReturn(this, (_getPrototypeOf3 = getPrototypeOf(XfileVersion)).call.apply(_getPrototypeOf3, [this].concat(args)));
 
-        _initialize4(assertThisInitialized(assertThisInitialized(_this4)));
+        _initialize4(assertThisInitialized(_this4));
 
         return _this4;
       }
@@ -4191,7 +4166,7 @@
 
         _this5 = possibleConstructorReturn(this, (_getPrototypeOf4 = getPrototypeOf(XworkbookPr)).call.apply(_getPrototypeOf4, [this].concat(args)));
 
-        _initialize5(assertThisInitialized(assertThisInitialized(_this5)));
+        _initialize5(assertThisInitialized(_this5));
 
         return _this5;
       }
@@ -4210,31 +4185,6 @@
       }]
     };
   }, Node);
-  var XworkbookProtection =
-  /*#__PURE__*/
-  function (_Node11) {
-    inherits(XworkbookProtection, _Node11);
-
-    function XworkbookProtection() {
-      var _getPrototypeOf5;
-
-      var _this6;
-
-      classCallCheck(this, XworkbookProtection);
-
-      for (var _len4 = arguments.length, args = new Array(_len4), _key4 = 0; _key4 < _len4; _key4++) {
-        args[_key4] = arguments[_key4];
-      }
-
-      _this6 = possibleConstructorReturn(this, (_getPrototypeOf5 = getPrototypeOf(XworkbookProtection)).call.apply(_getPrototypeOf5, [this].concat(args)));
-
-      defineProperty(assertThisInitialized(assertThisInitialized(_this6)), "__name", "workbookProtection");
-
-      return _this6;
-    }
-
-    return XworkbookProtection;
-  }(Node);
   var XbookViews =
   /*#__PURE__*/
   function (_Node12) {
@@ -4253,7 +4203,7 @@
 
       _this7 = possibleConstructorReturn(this, (_getPrototypeOf6 = getPrototypeOf(XbookViews)).call.apply(_getPrototypeOf6, [this].concat(args)));
 
-      defineProperty(assertThisInitialized(assertThisInitialized(_this7)), "__name", "bookViews");
+      defineProperty(assertThisInitialized(_this7), "__name", "bookViews");
 
       return _this7;
     }
@@ -4279,7 +4229,7 @@
 
         _this8 = possibleConstructorReturn(this, (_getPrototypeOf7 = getPrototypeOf(XworkbookView)).call.apply(_getPrototypeOf7, [this].concat(args)));
 
-        _initialize6(assertThisInitialized(assertThisInitialized(_this8)));
+        _initialize6(assertThisInitialized(_this8));
 
         return _this8;
       }
@@ -4316,7 +4266,7 @@
 
       _this9 = possibleConstructorReturn(this, (_getPrototypeOf8 = getPrototypeOf(Xsheets)).call.apply(_getPrototypeOf8, [this].concat(args)));
 
-      defineProperty(assertThisInitialized(assertThisInitialized(_this9)), "__name", "sheets");
+      defineProperty(assertThisInitialized(_this9), "__name", "sheets");
 
       return _this9;
     }
@@ -4342,7 +4292,7 @@
 
         _this10 = possibleConstructorReturn(this, (_getPrototypeOf9 = getPrototypeOf(Xsheet)).call.apply(_getPrototypeOf9, [this].concat(args)));
 
-        _initialize7(assertThisInitialized(assertThisInitialized(_this10)));
+        _initialize7(assertThisInitialized(_this10));
 
         return _this10;
       }
@@ -4380,7 +4330,7 @@
 
         _this11 = possibleConstructorReturn(this, (_getPrototypeOf10 = getPrototypeOf(XcalcPr)).call.apply(_getPrototypeOf10, [this].concat(args)));
 
-        _initialize8(assertThisInitialized(assertThisInitialized(_this11)));
+        _initialize8(assertThisInitialized(_this11));
 
         return _this11;
       }
@@ -4491,7 +4441,7 @@
           xmlns: xmlns
         }, children));
 
-        _initialize(assertThisInitialized(assertThisInitialized(_this)));
+        _initialize(assertThisInitialized(_this));
 
         _this[HEAD] = '<?xml version="1.0" encoding="UTF-8"?>';
         return _this;
@@ -4530,7 +4480,7 @@
 
         _this2 = possibleConstructorReturn(this, (_getPrototypeOf2 = getPrototypeOf(XDefault)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
-        _initialize2(assertThisInitialized(assertThisInitialized(_this2)));
+        _initialize2(assertThisInitialized(_this2));
 
         return _this2;
       }
@@ -4568,7 +4518,7 @@
 
         _this3 = possibleConstructorReturn(this, (_getPrototypeOf3 = getPrototypeOf(XOverride)).call.apply(_getPrototypeOf3, [this].concat(args)));
 
-        _initialize3(assertThisInitialized(assertThisInitialized(_this3)));
+        _initialize3(assertThisInitialized(_this3));
 
         return _this3;
       }
@@ -4709,10 +4659,10 @@
     }, {
       key: "saveAs",
       value: function saveAs() {
-        var type = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'nodebuffer';
+        var type = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "nodebuffer";
         var compress = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
         var parts = this.makeParts();
-        var zip = new Zip();
+        var zip = new JSZip();
 
         var _arr = Object.keys(parts);
 
@@ -4721,16 +4671,16 @@
           zip.file(key, parts[key]);
         }
 
-        var compression = compress ? 'DEFLATE' : 'STORE';
+        var compression = compress ? "DEFLATE" : "STORE";
 
-        if (type === 'blob' || type === 'base64') {
+        if (type === "blob" || type === "base64") {
           return zip.generateAsync({
             type: type,
             compression: compression
           });
         } else {
           return zip.generateNodeStream({
-            type: 'nodebuffer',
+            type: "nodebuffer",
             compression: compression
           });
         }
@@ -4760,13 +4710,13 @@
             var xSheet = sheet.makeXSheet(refTable, this.styles);
             types.children.push(new XOverride({
               PartName: "/xl/worksheets/sheet".concat(i, ".xml"),
-              ContentType: 'application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml'
+              ContentType: "application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"
             }));
             sheets.children.push(new Xsheet({
               name: sheet.name,
               sheetId: i,
-              'r:id': "rId".concat(i),
-              state: 'visible'
+              "r:id": "rId".concat(i),
+              state: "visible"
             }));
             parts["xl/worksheets/sheet".concat(i, ".xml")] = xSheet.render();
             i++;
@@ -4787,15 +4737,15 @@
         }
 
         workbook.sheets = sheets;
-        parts['xl/workbook.xml'] = workbook.render();
-        parts['_rels/.rels'] = DOT_RELS;
-        parts['docProps/app.xml'] = DOCPROPS_APP;
-        parts['docProps/core.xml'] = DOCPROPS_CORE;
-        parts['xl/theme/theme1.xml'] = XL_THEME_THEME;
-        parts['xl/sharedStrings.xml'] = refTable.makeXsst().render();
-        parts['xl/_rels/workbook.xml.rels'] = makeWorkbookRels(this.sheets.length).render();
-        parts['[Content_Types].xml'] = types.render();
-        parts['xl/styles.xml'] = this.styles.render();
+        parts["xl/workbook.xml"] = workbook.render();
+        parts["_rels/.rels"] = DOT_RELS;
+        parts["docProps/app.xml"] = DOCPROPS_APP;
+        parts["docProps/core.xml"] = DOCPROPS_CORE;
+        parts["xl/theme/theme1.xml"] = XL_THEME_THEME;
+        parts["xl/sharedStrings.xml"] = refTable.makeXsst().render();
+        parts["xl/_rels/workbook.xml.rels"] = makeWorkbookRels(this.sheets.length).render();
+        parts["[Content_Types].xml"] = types.render();
+        parts["xl/styles.xml"] = this.styles.render();
         return parts;
       }
     }]);
@@ -4807,9 +4757,7 @@
     File: File
   });
 
-  var index = objectSpread({}, cell, col, file, lib, row, sheet, style, {
-    Zip: Zip
-  });
+  var index = objectSpread({}, cell, col, file, lib, row, sheet, style);
 
   return index;
 
